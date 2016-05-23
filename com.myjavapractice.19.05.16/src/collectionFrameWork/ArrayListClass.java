@@ -1,6 +1,7 @@
 package collectionFrameWork;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 //import java.util.Iterator;
 
 public class ArrayListClass {
@@ -26,12 +27,18 @@ public class ArrayListClass {
 		ArrayList<Student> st = new ArrayList<Student>();
 		st.add(s1);
 		st.add(s2);
-		
 		for(Student st1 : st) {
 			System.out.println(st1.age+" " + st1.name+" " +  st1.rollno);
 		}
+//====================Adding  one more arraylist====================
 		
+		ArrayList<String> al2 = new ArrayList<String>();
+		al.addAll(al2);
+		al2.add("Ram");
+		al2.add("Hari");
+		Iterator itr = al2.iterator();
+		while(itr.hasNext()) {
+		System.out.println(itr.next());
+		}
 	}
-			
-
 }
