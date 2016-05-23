@@ -1,11 +1,14 @@
 package collectionFrameWork;
 
 import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class Mapping { 
+	
+	//checking changes
 	public static void main (String args[]) {
 		Map<Integer,String> m1 = new HashMap<Integer,String>();
 		m1.put(100, "Ram");
