@@ -11,9 +11,13 @@ public class ArrayListClass {
 		al.add("Raj");
 		al.add("Simran");
 		System.out.println("Team size " + al.size());
-		Iterator itr = al.iterator();
+		/*Iterator itr = al.iterator();
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
+		}*/
+		
+		for(String a1 : al) {
+		System.out.println(a1);
 		}
 	}
 
