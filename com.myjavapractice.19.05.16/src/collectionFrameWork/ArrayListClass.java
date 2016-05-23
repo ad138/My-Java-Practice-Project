@@ -33,12 +33,17 @@ public class ArrayListClass {
 //====================Adding  one more arraylist====================
 		
 		ArrayList<String> al2 = new ArrayList<String>();
-		al.addAll(al2);
 		al2.add("Ram");
 		al2.add("Hari");
-		Iterator itr = al2.iterator();
+		al.addAll(al2);
+		Iterator itr = al.iterator();
 		while(itr.hasNext()) {
-		System.out.println(itr.next());
+		System.out.println("after adding " + itr.next());
+		}
+		al.removeAll(al2);
+		Iterator itr1 = al.iterator();
+			while(itr1.hasNext()) {
+				System.out.println("after removing " + itr1.next());
+			}
 		}
 	}
-}
